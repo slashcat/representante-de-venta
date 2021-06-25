@@ -3,6 +3,10 @@
     "description": "Permite notificar a X cantidad de vendedores cuando se hace una venta asociada a determinada categoría",
     "require": {
         "php": ">=7.4",
-        "another-vendor/package": "1.*"
+    }
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
