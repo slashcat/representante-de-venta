@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Company\Model\Company\DataProvider">
+		<plugin name="Formax_RepresentantesDeVentas_Plugin_Magento_Company_Model_Company_DataProvider" type="Formax\RepresentantesDeVentas\Plugin\Magento\Company\Model\Company\DataProvider" sortOrder="10" disabled="false"/>
+	</type>
+	<type name="Magento\Company\Controller\Adminhtml\Index\Save">
+		<plugin name="Formax_RepresentantesDeVentas_Plugin_Magento_Company_Controller_Adminhtml_Index_Save" type="Formax\RepresentantesDeVentas\Plugin\Magento\Company\Controller\Adminhtml\Index\Save" sortOrder="10" disabled="false"/>
+	</type>
+    <preference for="Magento\User\Block\User\Edit\Tab\Main" type="Formax\RepresentantesDeVentas\Block\Adminhtml\User\Edit\Tab\Main" />
+    <preference for="Magento\Sales\Model\Order\Email\Sender" type="Formax\RepresentantesDeVentas\Model\Order\Email\Sender"/>
+    <preference for="Magento\Sales\Model\Order\Email\SenderBuilder" type="Formax\RepresentantesDeVentas\Model\Order\Email\SenderBuilder"/>
+    <preference for="Magento\Sales\Model\Order\Email\Sender\OrderSender" type="Formax\RepresentantesDeVentas\Model\Order\Email\Sender\OrderSender"/>
+    <preference for="Magento\NegotiableQuote\Model\Email\Sender" type="Formax\RepresentantesDeVentas\Model\NegotiableQuote\Email\Sender"/>
+</config>
